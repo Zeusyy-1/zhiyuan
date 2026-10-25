@@ -1,0 +1,154 @@
+/* ============================================================
+   知源 · 05 来源核验
+   ============================================================ */
+
+.verify__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 52px 80px 36px;
+}
+.verify__headline {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 58px;
+  letter-spacing: 1.8px;
+  color: var(--ink);
+}
+.verify__lead {
+  width: 760px;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--ink-2);
+}
+
+.stats { display: flex; gap: 16px; padding-top: 16px; }
+.stat-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 18px;
+  border-radius: var(--radius-xs);
+}
+.stat-card__value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+.stat-card__label { font-size: 10.5px; line-height: 1.5; }
+.stat-card--ok { background: var(--verify-bg-2); }
+.stat-card--ok .stat-card__value { color: var(--verify-ink); }
+.stat-card--ok .stat-card__label { color: var(--verify-ink-2); }
+.stat-card--pending { background: var(--pending-bg); }
+.stat-card--pending .stat-card__value { color: var(--pending-ink); }
+.stat-card--pending .stat-card__label { color: var(--pending-ink-2); }
+.stat-card--doubt { background: var(--doubt-bg); }
+.stat-card--doubt .stat-card__value,
+.stat-card--doubt .stat-card__label { color: var(--doubt-ink); }
+.stat-card--plain { background: var(--card); border: 1px solid var(--line-3); }
+.stat-card--plain .stat-card__value { color: var(--deep); }
+.stat-card--plain .stat-card__label { color: var(--ink-3); }
+
+.verify__body {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 6px 80px 64px;
+}
+
+/* ---------------- 五道工序 ---------------- */
+.process { display: flex; flex-direction: column; gap: 20px; }
+.process__title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+.process__steps { display: flex; gap: 18px; }
+.step { flex: 1; display: flex; flex-direction: column; gap: 7px; padding-top: 16px; }
+.step__no {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  color: var(--cinnabar);
+}
+.step__title { font-size: 13px; font-weight: 500; letter-spacing: 0.4px; color: var(--ink); }
+.step__desc { font-size: 10.5px; line-height: 20px; color: var(--ink-3); }
+
+/* ---------------- 抽检表 ---------------- */
+.audit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 26px;
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  border: 1px solid var(--line-3);
+}
+.audit__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 6px;
+}
+.audit__title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  color: var(--ink);
+}
+.audit__note { font-size: 10.5px; letter-spacing: 0.3px; color: var(--ink-3b); }
+
+.table { display: flex; flex-direction: column; }
+.table__row { display: flex; padding: 13px 0; transition: background-color 0.2s var(--ease); }
+.table__row:hover { background: #FCFAF3; }
+.table__row--head { padding: 9px 0; }
+.table__row--head:hover { background: transparent; }
+.table__cell { font-size: 12px; color: var(--ink-2); }
+.table__cell--head {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--ink-3b);
+}
+.table__cell--key { font-weight: 500; color: var(--ink-strong); }
+.table__cell--ok { font-weight: 500; color: var(--verify-ink); }
+.table__cell--pending { font-weight: 500; color: var(--pending-ink); }
+
+.c1 { width: 220px; flex: none; }
+.c2 { width: 280px; flex: none; }
+.c3 { width: 460px; flex: none; }
+.c4 { width: 268px; flex: none; }
+
+/* ---------------- 引用格式 ---------------- */
+.citation {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 22px 24px;
+  border-radius: var(--radius-sm);
+  background: var(--deep);
+}
+.citation__label {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 1.6px;
+  color: var(--on-deep-warm);
+}
+.citation__code {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: var(--on-deep);
+  user-select: all;
+}
+.citation__note { font-size: 10px; line-height: 19px; color: var(--on-deep-6); }

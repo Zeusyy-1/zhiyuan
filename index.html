@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>知源 · 作品总览</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=LXGW+WenKai+TC&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<style>
+:root{
+  --paper:#F7F4EB; --paper-warm:#F1EBDD; --paper-anno:#FBF6EA; --card:#FFFDF6;
+  --ink:#1D1B17; --ink-2:#3A342B; --ink-2b:#5E5749; --ink-3b:#98907F; --ink-4:#B6AE9C;
+  --cinnabar:#A63A2A; --cinnabar-tint:#EFE4DA; --cinnabar-ink:#8E3023;
+  --deep:#1F2E33; --deep-2:#26383E; --on-deep:#F2ECDD; --on-deep-2:#A9B8BA; --on-deep-3:#7D9092; --rose:#DB8F7E;
+  --verify-bg:#E4EEE5; --verify-ink:#2F4F42;
+  --pending-bg:#F5EBD5; --pending-ink:#8A6414;
+  --line:#DCD4C0; --line-2:#E2DCCD; --line-3:#E6DFCE; --line-4:#EFE9DA;
+  --font-serif:"Source Han Serif CN","Noto Serif SC","Songti SC","SimSun",serif;
+  --font-sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  --font-kai:"LXGW WenKai TC","Kaiti SC","KaiTi",serif;
+  --font-mono:"Inter","SF Mono","Consolas",monospace;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --r:2px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--font-sans); font-size:14px; line-height:1.7;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 40px}
+
+/* ---------- 顶栏 ---------- */
+.top{
+  display:flex;align-items:center;justify-content:space-between;
+  height:66px;border-bottom:1px solid var(--line-2);
+}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{
+  width:30px;height:30px;border-radius:var(--r);background:var(--cinnabar);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-serif);font-weight:700;font-size:15px;color:#FBF7EE;
+}
+.bname{font-family:var(--font-serif);font-weight:700;font-size:18px;letter-spacing:1.4px}
+.bsub{font-family:var(--font-mono);font-size:9px;letter-spacing:1.2px;color:var(--ink-3b);display:block;margin-top:-2px}
+.top__right{display:flex;align-items:center;gap:18px;font-size:11.5px;color:var(--ink-3b)}
+.top__right b{font-weight:500;color:var(--ink-2b)}
+
+/* ---------- 页头 ---------- */
+.hero{padding:64px 0 40px}
+.kicker{
+  display:block;font-family:var(--font-mono);font-size:11px;font-weight:600;
+  letter-spacing:2px;color:var(--cinnabar);margin-bottom:16px;
+}
+h1{
+  font-family:var(--font-serif);font-weight:700;font-size:46px;line-height:64px;
+  letter-spacing:2px;margin-bottom:16px;
+}
+.lede{
+  font-size:14px;line-height:28px;color:var(--ink-2b);max-width:820px;margin-bottom:26px;
+}
+.stats{display:flex;gap:0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.stat{flex:1;padding:16px 0 15px;display:flex;align-items:baseline;gap:10px}
+.stat + .stat{border-left:1px solid var(--line-4);padding-left:26px}
+.stat__n{font-family:var(--font-serif);font-weight:700;font-size:24px;letter-spacing:.5px}
+.stat__l{font-size:11px;color:var(--ink-3b)}
+
+/* ---------- 区块标题 ---------- */
+.sec{padding-top:46px}
+.sec__head{
+  display:flex;align-items:baseline;gap:14px;
+  padding-bottom:12px;border-bottom:1px solid var(--line-2);margin-bottom:16px;
+}
+.sec__no{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:1.8px;color:var(--cinnabar)}
+.sec__title{font-family:var(--font-serif);font-weight:700;font-size:21px;letter-spacing:.8px}
+.sec__note{margin-left:auto;font-size:11px;color:var(--ink-3b)}
+
+/* ---------- 主应用卡 ---------- */
+.app{
+  display:flex;align-items:flex-start;gap:48px;
+  padding:34px 36px 32px;background:var(--deep);border-radius:var(--r);
+  transition:background .22s var(--ease);
+}
+.app:hover{background:#233940}
+.app__main{flex:1;min-width:0}
+.app__kicker{font-family:var(--font-mono);font-size:9.5px;font-weight:600;letter-spacing:1.8px;color:var(--rose)}
+.app__title{
+  font-family:var(--font-serif);font-weight:700;font-size:27px;line-height:38px;
+  letter-spacing:1px;color:var(--on-deep);margin:10px 0 10px;
+}
+.app__desc{font-size:12.5px;line-height:24px;color:var(--on-deep-2);max-width:600px;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{
+  padding:4px 10px;border:1px solid #374A50;border-radius:var(--r);
+  font-size:11px;color:#C4CFD0;letter-spacing:.3px;
+}
+.app__go{
+  flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+  align-self:center;
+}
+.go__arrow{
+  font-family:var(--font-serif);font-size:22px;color:var(--rose);
+  transition:transform .22s var(--ease);
+}
+.app:hover .go__arrow{transform:translateX(6px)}
+.go__label{font-size:11px;letter-spacing:.5px;color:var(--on-deep-3)}
+
+/* ---------- 篇目格 ---------- */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{
+  display:flex;flex-direction:column;gap:9px;min-height:172px;
+  padding:18px 16px;background:var(--card);
+  border:1px solid var(--line-3);border-radius:var(--r);
+  transition:border-color .22s var(--ease),background .22s var(--ease);
+}
+.card:hover{border-color:var(--line);background:#FFFEF9}
+.card__no{font-family:var(--font-mono);font-size:9.5px;font-weight:600;letter-spacing:1.4px;color:var(--cinnabar)}
+.card__title{
+  font-family:var(--font-serif);font-weight:700;font-size:14.5px;line-height:23px;letter-spacing:.3px;
+}
+.card__sub{font-size:11px;line-height:19px;color:var(--ink-2b)}
+.card__meta{margin-top:auto;font-size:10px;color:var(--ink-3b)}
+.card__go{font-size:10.5px;font-weight:500;letter-spacing:.4px;color:var(--cinnabar)}
+
+/* 书目总表：深色整行 */
+.card--index{
+  grid-column:1 / -1;background:var(--deep);border-color:var(--deep);
+  flex-direction:row;align-items:center;gap:32px;min-height:0;padding:22px 26px;
+}
+.card--index:hover{background:var(--deep-2);border-color:var(--deep-2)}
+.card--index .card__no{color:var(--rose)}
+.card--index .card__title{color:var(--on-deep);font-size:16px}
+.card--index .card__sub{color:var(--on-deep-2);max-width:720px}
+.card--index .card__meta{color:var(--on-deep-3);margin-top:0}
+.card--index .card__go{color:var(--rose);margin-left:auto;flex:none;letter-spacing:.6px}
+
+/* ---------- 页脚 ---------- */
+.foot{margin-top:52px;padding:26px 0 60px;border-top:1px solid var(--line-2)}
+.foot__title{
+  font-family:var(--font-sans);font-size:10px;font-weight:500;letter-spacing:1.5px;
+  color:var(--ink-3b);margin-bottom:10px;
+}
+.foot__body{font-size:11.5px;line-height:23px;color:var(--ink-3b);max-width:1000px}
+.foot__body strong{font-weight:500;color:var(--ink-2b)}
+.foot__sig{
+  margin-top:18px;font-family:var(--font-kai);font-size:12px;color:var(--cinnabar-ink);letter-spacing:.4px;
+}
+
+/* 矮屏（如 1280×720 笔记本）：压缩页头，让主应用卡完整落在首屏 */
+@media (max-height:800px){
+  .hero{padding:38px 0 26px}
+  h1{font-size:38px;line-height:52px;margin-bottom:12px}
+  .lede{font-size:13px;line-height:25px;margin-bottom:20px}
+  .stat{padding:12px 0 11px}
+  .stat__n{font-size:21px}
+  .sec{padding-top:34px}
+  .app{padding:26px 30px 24px}
+  .app__title{font-size:23px;line-height:34px;margin:8px 0 8px}
+}
+
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  h1{font-size:26px;line-height:38px;letter-spacing:.8px;text-wrap:balance}
+  .lede{font-size:13px;line-height:25px}
+  .hero{padding:34px 0 24px}
+  .stats{display:grid;grid-template-columns:1fr 1fr;border-bottom:0}
+  .stat{padding:12px 0}
+  .stat + .stat{border-left:0;padding-left:0}
+  .stat__n{font-size:20px}
+  .grid4, .grid2{grid-template-columns:1fr}
+  .app{padding:22px 18px;gap:14px}
+  .app__title{font-size:20px;line-height:29px;text-wrap:balance}
+  .app__desc{font-size:12px;line-height:22px}
+  .chip{font-size:10.5px;padding:3px 8px}
+  .card{min-height:0;padding:16px 14px}
+  .card--index{padding:18px}
+  .card--index .card__title{font-size:15px}
+  .card--index .card__sub{font-size:11px}
+  .foot__body{font-size:11px;line-height:22px}
+  .top__right span:first-child{display:none}
+}
+
+@media (max-width:1080px){
+  .wrap{padding:0 24px}
+  h1{font-size:34px;line-height:48px;letter-spacing:1.2px}
+  .grid4{grid-template-columns:1fr 1fr}
+  .app{flex-direction:column;gap:20px}
+  .stats{flex-wrap:wrap}
+  .stat{flex:1 1 50%}
+  .card--index{flex-direction:column;align-items:flex-start;gap:10px}
+  .card--index .card__go{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark">知</div>
+      <div>
+        <div class="bname">知源</div>
+        <span class="bsub">ZHIYUAN · CLASSICS READER</span>
+      </div>
+    </div>
+    <div class="top__right">
+      <span>主应用 6 屏 · 独立页 5 个</span>
+      <span>2026-10-22</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="kicker">OVERVIEW · ALL DELIVERABLES</span>
+    <h1>读、记、核，都在同一个地方</h1>
+    <p class="lede">
+      武汉大学马克思主义理论专业的学习支持系统。六屏主应用负责读、记、核；五页原文与书目负责回到一手材料。
+      每条批注都带出处与核校状态，查不到的明写「待核实」——这是整套东西的底线，不是装饰。
+    </p>
+    <div class="stats">
+      <div class="stat"><span class="stat__n">06</span><span class="stat__l">屏主应用 · 单页切换</span></div>
+      <div class="stat"><span class="stat__n">04</span><span class="stat__l">篇原文 · 旁批配导图</span></div>
+      <div class="stat"><span class="stat__n">15</span><span class="stat__l">本书目 · 逐本标来源</span></div>
+    </div>
+  </section>
+
+  <!-- 主应用 -->
+  <section class="sec">
+    <div class="sec__head">
+      <span class="sec__no">01</span>
+      <h2 class="sec__title">主应用 · 六屏</h2>
+      <span class="sec__note">键盘 1–6 或 ←→ 切换</span>
+    </div>
+
+    <a class="app" href="app/index.html">
+      <div class="app__main">
+        <span class="app__kicker">MAIN APPLICATION</span>
+        <h3 class="app__title">知源 · 马克思主义理论学习平台</h3>
+        <p class="app__desc">
+          从「读了不少却写不出来」的三个真实原因出发，把原典、名家批注、成长路线与来源核验放进同一个界面。1440 画布等比缩放，桌面浏览器一屏看全。
+        </p>
+        <div class="chips">
+          <span class="chip">首页</span>
+          <span class="chip">学习工作台</span>
+          <span class="chip">经典精读</span>
+          <span class="chip">成长路线</span>
+          <span class="chip">来源核验</span>
+          <span class="chip">通用学习面板</span>
+        </div>
+      </div>
+      <div class="app__go">
+        <span class="go__arrow">→</span>
+        <span class="go__label">进入应用</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- 原文库 -->
+  <section class="sec">
+    <div class="sec__head">
+      <span class="sec__no">02</span>
+      <h2 class="sec__title">经典原文库 · 四篇</h2>
+      <span class="sec__note">关键段落节选 · 旁批在页边 · 每节一张导图</span>
+    </div>
+
+    <div class="grid4">
+      <a class="card" href="app/works/manuscrit-1844.html">
+        <span class="card__no">篇目 01</span>
+        <span class="card__title">《1844年经济学哲学手稿》</span>
+        <span class="card__sub">［异化劳动和私有财产］</span>
+        <span class="card__meta">2 节 · 6 条旁批 · 2 张导图</span>
+        <span class="card__go">进入原文 →</span>
+      </a>
+
+      <a class="card" href="app/works/manifesto.html">
+        <span class="card__no">篇目 02</span>
+        <span class="card__title">《共产党宣言》</span>
+        <span class="card__sub">第一、二章</span>
+        <span class="card__meta">2 节 · 5 条旁批 · 2 张导图</span>
+        <span class="card__go">进入原文 →</span>
+      </a>
+
+      <a class="card" href="app/works/german-ideology.html">
+        <span class="card__no">篇目 03</span>
+        <span class="card__title">《德意志意识形态》</span>
+        <span class="card__sub">第一章 费尔巴哈（节选）</span>
+        <span class="card__meta">2 节 · 4 条旁批 · 2 张导图</span>
+        <span class="card__go">进入原文 →</span>
+      </a>
+
+      <a class="card" href="app/works/capital.html">
+        <span class="card__no">篇目 04</span>
+        <span class="card__title">《资本论》第一卷</span>
+        <span class="card__sub">第一篇 第一章 商品</span>
+        <span class="card__meta">2 节 · 4 条旁批 · 2 张导图</span>
+        <span class="card__go">进入原文 →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 书目总表 -->
+  <section class="sec">
+    <div class="sec__head">
+      <span class="sec__no">03</span>
+      <h2 class="sec__title">书目总表 · 十五本</h2>
+      <span class="sec__note">原著 4 · 教材 9 · 党史 2</span>
+    </div>
+
+    <div class="grid2">
+      <a class="card card--index" href="app/works/library.html">
+        <span class="card__no">总表</span>
+        <span class="card__title">十五本书，三种来源等级</span>
+        <span class="card__sub">每本标注：公开可查 / 馆藏检索 / 纸本必读，并配真实学者的导读要点</span>
+        <span class="card__meta">链接已逐个实测可达性</span>
+        <span class="card__go">打开书目总表 →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="foot">
+    <p class="foot__title">怎么打开</p>
+    <p class="foot__body">
+      直接双击本文件即可，<strong>不需要装任何东西、不需要起本地服务器</strong>。所有页面都在 <code>app/</code> 目录下，用相对路径互相跳转，因此整个文件夹可以整体拷走或压缩发送。
+      字体优先用系统本地字体（思源宋体 / Noto Serif SC / 宋体），并加载 Google Fonts 做渐进增强——<strong>断网也能正常显示</strong>，只是字形略素。
+    </p>
+
+    <p class="foot__title" style="margin-top:22px">关于内容的四条底线</p>
+    <p class="foot__body">
+      <strong>一、</strong>学者姓名与机构为真，但批注文字是「导读要点」，不是伪造的直接引语。<br>
+      <strong>二、</strong>原文页只做关键段落节选——马恩著作中文译文有版权，整章复制属侵权。<br>
+      <strong>三、</strong>九本马工程教材无合法免费全文，书目页给的是检索路径，不是假链接。<br>
+      <strong>四、</strong>界面所标页码用于检索定位，正式引用请核对纸本。
+    </p>
+
+    <p class="foot__sig">语气可以轻松，交付必须严谨。—— 阿墨</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

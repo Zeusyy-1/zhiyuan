@@ -1,0 +1,82 @@
+/* ============================================================
+   知源 · Design Tokens
+   由设计稿直接提取：纸墨 + 朱批
+   ============================================================ */
+
+:root {
+  /* ---------- 纸与墨 ---------- */
+  --paper:        #F7F4EB; /* 页面底色 */
+  --paper-warm:   #F1EBDD; /* 次级底（核验页 / 能力区） */
+  --paper-toc:    #F3EEE1; /* 阅读页目录 */
+  --paper-anno:   #FBF6EA; /* 批注栏 */
+  --card:         #FFFDF6; /* 卡片 */
+  --card-soft:    #FBF7EE; /* 品牌字反白底 */
+
+  /* ---------- 文字 ---------- */
+  --ink:          #1D1B17; /* 主文字 */
+  --ink-strong:   #2A251E; /* 正文原文 */
+  --ink-body:     #3A342B;
+  --ink-quote:    #3E372C;
+  --ink-2:        #5E5749; /* 次级正文 */
+  --ink-2b:       #6E675C;
+  --ink-3:        #8C8474; /* 说明 */
+  --ink-3b:       #98907F;
+  --ink-4:        #A79E8C; /* 弱提示 */
+  --ink-5:        #B6AE9C; /* 极弱 */
+
+  /* ---------- 朱砂 / 墨青 ---------- */
+  --cinnabar:     #A63A2A;
+  --cinnabar-ink: #9E3527;
+  --cinnabar-tint:#F5EDE4;
+  --cinnabar-toc: #EFE4DA;
+  --deep:         #1F2E33; /* 深墨青：侧栏 / CTA / 页脚 */
+  --deep-2:       #1A272B; /* 页脚 */
+  --deep-3:       #26383E; /* 深底卡片 */
+  --deep-4:       #2C4046; /* 侧栏选中 */
+  --deep-line:    #374A50;
+
+  /* ---------- 状态色 ---------- */
+  --verify-bg:    #E4EEE5; /* 已核校 */
+  --verify-bg-2:  #E9F0EA;
+  --verify-ink:   #2F4F42;
+  --verify-ink-2: #3E6153;
+  --pending-bg:   #F5EBD5; /* 待核实 */
+  --pending-line: #E6D6B4;
+  --pending-ink:  #8A6414;
+  --pending-ink-2:#7A5A10;
+  --pending-ink-3:#6B5210;
+  --doubt-bg:     #E9E5DA; /* 存疑 */
+  --doubt-ink:    #5E5749;
+
+  /* ---------- 线 ---------- */
+  --line:         #E2DCCD; /* 主分割 */
+  --line-2:       #DCD4C0; /* 描边 */
+  --line-3:       #E6DFCE; /* 卡片边 */
+  --line-4:       #EFE9DA; /* 卡内细分 */
+  --line-5:       #EAE2CF; /* 批注卡边 */
+  --line-btn:     #CFC7B4;
+  --line-dark:    #2C3B40;
+  --line-dark-2:  #4A5C60;
+
+  /* ---------- 深底文字 ---------- */
+  --on-deep:      #F2ECDD;
+  --on-deep-2:    #F5F0E2;
+  --on-deep-3:    #DDE6E6;
+  --on-deep-4:    #A9B8BA;
+  --on-deep-5:    #93A5A7;
+  --on-deep-6:    #7D9092;
+  --on-deep-7:    #71858A;
+  --on-deep-warm: #DB8F7E; /* 深底上的朱砂 */
+
+  /* ---------- 字体 ---------- */
+  --font-serif: "Source Han Serif CN", "Noto Serif SC", "Songti SC", "SimSun", "STSong", serif;
+  --font-sans:  "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  --font-kai:   "LXGW WenKai TC", "Kaiti SC", "KaiTi", "STKaiti", "Noto Serif SC", serif;
+  --font-mono:  "Inter", "SF Mono", "Consolas", ui-monospace, monospace;
+
+  /* ---------- 画布 ---------- */
+  --canvas-w: 1440px;
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>知源 · 马克思主义理论学习与研究支持</title>
+<meta name="description" content="知源把马恩原典、中文二手文献与名家导读放进同一条证据链：可溯源、可核校、可追溯版本。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=LXGW+WenKai+TC&display=swap" media="print" onload="this.media='all'">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/reader.css">
+<link rel="stylesheet" href="css/roadmap.css">
+<link rel="stylesheet" href="css/verify.css">
+<link rel="stylesheet" href="css/panel.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<main class="stage" id="stage">
+
+<!-- ============================================================
+     01 首页
+     ============================================================ -->
+<section class="screen is-active" id="home" data-screen="home">
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand__mark">知</div>
+      <div class="brand__text">
+        <span class="brand__name">知源</span>
+        <span class="brand__latin">ZHIYUAN · CLASSICS READER</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#reader" data-nav="reader">经典精读</a>
+      <a href="#roadmap" data-nav="roadmap">成长路线</a>
+      <a href="#panel" data-nav="panel">学习面板</a>
+      <a href="#reader" data-nav="reader">名家批注</a>
+      <a href="#verify" data-nav="verify">来源核验</a>
+      <a href="#dashboard" data-nav="dashboard">概念图谱</a>
+    </nav>
+
+    <div class="header-right">
+      <svg class="icon-search" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="11" cy="11" r="7.5" stroke="#6E675C" stroke-width="1.7"/>
+        <path d="M16.5 16.5L21 21" stroke="#6E675C" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      <a class="login link-quiet" href="#dashboard" data-nav="dashboard">登录</a>
+      <a class="btn btn-header" href="#dashboard" data-nav="dashboard">开始学习</a>
+    </div>
+  </header>
+  <div class="rule"></div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero__left">
+      <div class="kicker">
+        <span class="kicker__line"></span>
+        <span class="kicker__text">武汉大学 · 马克思主义理论 · 学习与研究支持</span>
+      </div>
+
+      <h1 class="hero__title">从「读过」到「读懂」，<br>再到能自己下判断</h1>
+
+      <p class="hero__sub">知源把马恩原典、中文二手文献与名家导读放进同一条证据链：每条批注都标出处、标版本、标页码；核不实的条目会明写「待核实」，而不是含糊带过。</p>
+
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="#dashboard" data-nav="dashboard">进入我的学习路径</a>
+        <a class="btn btn-ghost" href="#reader" data-nav="reader">先看一条名家批注</a>
+      </div>
+
+      <div class="hero__trust">
+        <div class="rule"></div>
+        <div class="trust-row">
+          <div class="stat">
+            <span class="stat__value">4 卷</span>
+            <span class="stat__label">《马恩选集》全文</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">1,240 条</span>
+            <span class="stat__label">可溯源名家批注</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">7 个</span>
+            <span class="stat__label">版本对照本</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value stat__value--accent">100%</span>
+            <span class="stat__label">标注出处与页码</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 叠纸阅读卡 -->
+    <div class="stack">
+      <div class="stack__layer stack__layer--2"></div>
+      <div class="stack__layer stack__layer--1"></div>
+
+      <article class="reading-card">
+        <div class="card__meta">
+          <span class="card__book">《1844年经济学哲学手稿》</span>
+          <span class="card__edition">选集 1 · 文集 1 对照</span>
+        </div>
+        <div class="rule-soft"></div>
+
+        <p class="card__quote">劳动所生产的对象，即劳动的产品，作为一种异己的存在物，作为不依赖于生产者的力量，同劳动相对立。</p>
+
+        <div class="anno">
+          <div class="anno__bar"></div>
+          <div class="anno__body">
+            <p class="anno__text">「异己的存在物」是整段的关键：对象化并不等于异化——只有当产物反过来支配生产者，异化才成立。</p>
+            <div class="anno__scholar">
+              <span class="anno__name">聂锦芳 · 北京大学哲学系</span>
+              <span class="anno__id">MARX-1844-07</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__version">
+          <span class="version__label">版本对照 · 两版页码不同</span>
+          <p class="version__text">同一段落两处可查：《马克思恩格斯选集》第 1 卷（2012）与《文集》第 1 卷（2009）。页码不同，引用必须写明所据版本。</p>
+        </div>
+
+        <div class="card__footer">
+          <span class="badge-verified">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1.5 6.2L4.4 9L10.5 2.8" stroke="#2F4F42" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            已核校 · 双人复核
+          </span>
+          <span class="card__pageref">文集第 1 卷 · 第 519 页</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- 02 问题诊断 -->
+  <section class="section pain">
+    <div class="pain__head">
+      <span class="section__kicker">01 — 问题</span>
+      <h2 class="section__title">读了不少，却写不出来：三个真实原因</h2>
+    </div>
+
+    <div class="pain__grid">
+      <article class="pain__item">
+        <div class="pain__rule"></div>
+        <span class="pain__index">01</span>
+        <h3 class="pain__title">记得结论，说不清来源</h3>
+        <p class="pain__body">概论读多了，「异化劳动有四重规定」张口就来；可一问出自哪一卷哪一页，就卡住了。</p>
+      </article>
+      <article class="pain__item">
+        <div class="pain__rule"></div>
+        <span class="pain__index">02</span>
+        <h3 class="pain__title">读过原著，串不起脉络</h3>
+        <p class="pain__body">《手稿》翻过，《德意志意识形态》也读过，却讲不清 1844 到 1846 年间问题意识是怎么转的。</p>
+      </article>
+      <article class="pain__item">
+        <div class="pain__rule"></div>
+        <span class="pain__index">03</span>
+        <h3 class="pain__title">引了二手，核不了版本</h3>
+        <p class="pain__body">转引别人的引文，用的是哪个译本、哪一年的版、页码对不对，全都不清楚——这是论文里最容易被抓的地方。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 03 核心能力 -->
+  <section class="section section--tight-top cap">
+    <div class="cap__head">
+      <div class="cap__head-left">
+        <span class="section__kicker">02 — 能力</span>
+        <h2 class="section__title">四件事，连成一条证据链</h2>
+      </div>
+      <p class="section__desc cap__head-right">从读到写，每一步都留下可查的痕迹：读的是哪一版，批注出自谁，引文落在第几页。</p>
+    </div>
+
+    <div class="cap__grid">
+      <article class="cap-card">
+        <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 6.4C10.4 5.1 8.4 4.5 6.2 4.5c-1 0-1.8.1-2.2.2v13.1c.4-.1 1.2-.2 2.2-.2 2.2 0 4.2.6 5.8 1.9 1.6-1.3 3.6-1.9 5.8-1.9 1 0 1.8.1 2.2.2V4.7c-.4-.1-1.2-.2-2.2-.2-2.2 0-4.2.6-5.8 1.9Z" stroke="#1F2E33" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M12 6.4v13.1" stroke="#1F2E33" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="cap-card__title">经典精读</h3>
+        <p class="cap-card__body">186 篇原典全文，标到段落。原文与批注左右同屏，读到哪一句，批注跟到哪一句。</p>
+        <div class="cap-card__spacer"></div>
+        <p class="cap-card__meta">《马克思恩格斯选集》第 1–4 卷 · 全文可检索</p>
+      </article>
+
+      <article class="cap-card">
+        <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15.5 4.2l4.3 4.3-9.4 9.4-5 1.7 1.7-5 8.4-10.4Z" stroke="#1F2E33" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M4 21h16" stroke="#1F2E33" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="cap-card__title">名家批注</h3>
+        <p class="cap-card__body">按段落挂靠学者解读，不转述、不拼接。每条都注明作者、机构、出自哪本著作哪一页。</p>
+        <div class="cap-card__spacer"></div>
+        <p class="cap-card__meta">38 位学者 · 1,240 条批注 · 全部可溯源</p>
+      </article>
+
+      <article class="cap-card">
+        <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3.5 20.5h5v-5h5v-5h5v-5h2" stroke="#1F2E33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="3.5" cy="20.5" r="1.6" fill="#A63A2A"/>
+          <circle cx="20.5" cy="5.5" r="1.6" fill="#A63A2A"/>
+        </svg>
+        <h3 class="cap-card__title">成长路线</h3>
+        <p class="cap-card__body">从大一到研究生入门，四阶段任务、必读书目、输出要求，还有每一届都踩的坑。</p>
+        <div class="cap-card__spacer"></div>
+        <p class="cap-card__meta">4 个阶段 · 26 个节点 · 附书目与考核方式</p>
+      </article>
+
+      <article class="cap-card">
+        <svg class="cap-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3l7.5 3v6.2c0 4.2-3.2 7.8-7.5 9.3-4.3-1.5-7.5-5.1-7.5-9.3V6L12 3Z" stroke="#1F2E33" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M9 12.2l2.2 2.2 4.1-4.5" stroke="#A63A2A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 class="cap-card__title">来源核验</h3>
+        <p class="cap-card__body">三级核校标记与多版本比对。核不实的当场标明「待核实」，并写清该去哪里核。</p>
+        <div class="cap-card__spacer"></div>
+        <p class="cap-card__meta">7 个版本 · 双人复核 · 引文一键生成注释</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 名家批注墙 -->
+  <section class="scholar-band">
+    <span class="section__kicker">03 — 学者</span>
+    <h2 class="section__title">批注不替你思考，只告诉你读到哪儿该停下来</h2>
+    <p class="scholar-band__sub">所有批注都锚定到具体段落，随时可以退回原文核对。以下是部分参与导读的学者。</p>
+
+    <div class="scholar-grid">
+      <article class="scholar-card">
+        <h3 class="scholar-card__name">聂锦芳</h3>
+        <p class="scholar-card__org">北京大学哲学系 · 教授</p>
+        <p class="scholar-card__research">马克思文本与文献学</p>
+        <span class="scholar-card__count">86 条批注</span>
+      </article>
+      <article class="scholar-card">
+        <h3 class="scholar-card__name">张一兵</h3>
+        <p class="scholar-card__org">南京大学哲学系 · 教授</p>
+        <p class="scholar-card__research">马克思哲学文本学</p>
+        <span class="scholar-card__count">112 条批注</span>
+      </article>
+      <article class="scholar-card">
+        <h3 class="scholar-card__name">吴晓明</h3>
+        <p class="scholar-card__org">复旦大学哲学学院 · 教授</p>
+        <p class="scholar-card__research">马克思主义哲学史</p>
+        <span class="scholar-card__count">94 条批注</span>
+      </article>
+      <article class="scholar-card">
+        <h3 class="scholar-card__name">汪信砚</h3>
+        <p class="scholar-card__org">武汉大学哲学学院 · 教授</p>
+        <p class="scholar-card__research">马克思主义哲学·价值论</p>
+        <span class="scholar-card__count">78 条批注</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- 05 成长路线预览 -->
+  <section class="section path">
+    <div class="path__head">
+      <div class="path__head-left">
+        <span class="section__kicker">04 — 培养方案</span>
+        <h2 class="section__title">武大的四年：前三个学期不分专业</h2>
+      </div>
+      <a class="path__link" href="#roadmap" data-nav="roadmap">
+        对照完整培养方案
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2.5 8h11M9 3.5L13.5 8 9 12.5" stroke="#A63A2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="path__grid">
+      <article class="stage">
+        <div class="stage__marker">
+          <span class="stage__dot"></span>
+          <span class="stage__label">第 1–3 学期 · 大类</span>
+        </div>
+        <h3 class="stage__title">打地基：公共课与三大导引</h3>
+        <p class="stage__body">不分专业。先把马克思主义哲学、政治经济学、科学社会主义的框架立起来。</p>
+        <p class="stage__books">书单｜《马克思主义发展史》（第二版）</p>
+      </article>
+
+      <article class="stage">
+        <div class="stage__marker">
+          <span class="stage__dot"></span>
+          <span class="stage__label">第 3 学期末 · 分流</span>
+        </div>
+        <h3 class="stage__title">分流：三个方向选一个</h3>
+        <p class="stage__body">马克思主义理论／思想政治教育／中国共产党历史。此后按方向进入专业培养。</p>
+        <p class="stage__books">说明｜具体安排以学院当年通知为准</p>
+      </article>
+
+      <article class="stage">
+        <div class="stage__marker">
+          <span class="stage__dot"></span>
+          <span class="stage__label">第 4–5 学期 · 专业</span>
+        </div>
+        <h3 class="stage__title">进专业：文献加发展史</h3>
+        <p class="stage__body">一手文献按哲学、政治经济学、科学社会主义三块导读，用发展史排时间轴。</p>
+        <p class="stage__books">课程｜经典作家文献选读、马克思主义发展史</p>
+      </article>
+
+      <article class="stage">
+        <div class="stage__marker">
+          <span class="stage__dot"></span>
+          <span class="stage__label">第 6–8 学期 · 科研与出口</span>
+        </div>
+        <h3 class="stage__title">立专题：科研训练必修</h3>
+        <p class="stage__body">科研训练计入必修学分，早进课题组比多选水课更划算；近七成本科毕业生继续深造。</p>
+        <p class="stage__books">出口｜毕业论文 + 保研／考研</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 06 来源核验 -->
+  <section class="verify">
+    <div class="verify__left">
+      <span class="section__kicker">05 — 核验</span>
+      <h2 class="verify__title">核不实就写「待核实」，这是底线</h2>
+      <p class="verify__desc">每条批注要过三道工序：机器比对 → 编辑复核 → 学者确认。版本、页码、译名任一项对不上，就退回去重做。</p>
+
+      <div class="verify__row">
+        <span class="verify__badge verify__badge--ok">已核校</span>
+        <p class="verify__text">原文、版本、页码逐一比对，双人复核后发布，可直接引用。</p>
+      </div>
+      <div class="verify__row">
+        <span class="verify__badge verify__badge--pending">待核实</span>
+        <p class="verify__text">出处存在，但页码或所据版本尚未确认；标注后不作引用依据，并写明该去哪里核。</p>
+      </div>
+      <div class="verify__row">
+        <span class="verify__badge verify__badge--doubt">存疑</span>
+        <p class="verify__text">与通行版本存在冲突，暂不采用；页面会附上冲突说明，供你自行判断。</p>
+      </div>
+    </div>
+
+    <article class="evidence-card">
+      <div class="ev__head">
+        <h3 class="ev__title">一条批注的档案</h3>
+        <span class="ev__code">MARX-1844-07</span>
+      </div>
+      <div class="rule-soft"></div>
+
+      <div class="ev__field">
+        <span class="ev__label">原文摘录</span>
+        <p class="ev__value ev__value--quote">劳动所生产的对象，即劳动的产品，作为一种异己的存在物，作为不依赖于生产者的力量，同劳动相对立。</p>
+      </div>
+      <div class="ev__field">
+        <span class="ev__label">所据版本</span>
+        <p class="ev__value">《马克思恩格斯文集》第 1 卷，人民出版社 2009 年版</p>
+      </div>
+      <div class="ev__field">
+        <span class="ev__label">页码与异文</span>
+        <p class="ev__value">第 519 页｜1979 年单行本此处作「作为一种异己的对象」，措辞有差，引用时请注明版本。</p>
+      </div>
+      <div class="ev__field">
+        <span class="ev__label">复核记录</span>
+        <p class="ev__value ev__value--ok">编辑部双人复核 · 2026-09-18 · 状态：已核校</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- 07 结尾 CTA -->
+  <section class="cta">
+    <span class="section__kicker">06 — 开始</span>
+    <h2 class="cta__title">先读一页，再决定要不要继续</h2>
+    <p class="cta__sub">不用注册，直接打开《1844年经济学哲学手稿》「异化劳动」一节，配三条已核校的名家批注。</p>
+    <div class="cta__actions">
+      <a class="btn btn-cta" href="#reader" data-nav="reader">打开第一节原文</a>
+      <a class="btn btn-cta btn-cta--ghost" href="#roadmap" data-nav="roadmap">对照培养方案看四年</a>
+    </div>
+    <p class="cta__note">学习记录只保存在你自己的账号内，不对外共享。</p>
+  </section>
+
+  <!-- 08 页脚 -->
+  <footer class="site-footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__name">知源</span>
+        <span class="footer__tag">马克思主义理论学习与研究支持平台</span>
+        <p class="footer__note">文本依《马克思恩格斯文集》（人民出版社 2009 年版）校订。界面所标页码用于检索定位，正式引用请核对纸本原书。</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <span class="footer__col-title">学习</span>
+          <a class="footer__link" href="#reader" data-nav="reader">经典精读</a>
+          <a class="footer__link" href="#roadmap" data-nav="roadmap">成长路线</a>
+          <a class="footer__link" href="#panel" data-nav="panel">学习面板</a>
+          <a class="footer__link" href="#dashboard" data-nav="dashboard">概念图谱</a>
+          <a class="footer__link" href="#dashboard" data-nav="dashboard">学习工作台</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">内容</span>
+          <a class="footer__link" href="#reader" data-nav="reader">名家批注</a>
+          <a class="footer__link" href="#verify" data-nav="verify">版本比对</a>
+          <a class="footer__link" href="#verify" data-nav="verify">文献库</a>
+          <a class="footer__link" href="#verify" data-nav="verify">学科刊物索引</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">说明</span>
+          <a class="footer__link" href="#verify" data-nav="verify">核验标准</a>
+          <a class="footer__link" href="#verify" data-nav="verify">引用格式 GB/T 7714</a>
+          <a class="footer__link" href="#verify" data-nav="verify">勘误提交</a>
+          <a class="footer__link" href="#verify" data-nav="verify">更新日志</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">关于</span>
+          <a class="footer__link" href="#home" data-nav="home">团队与共建</a>
+          <a class="footer__link" href="#home" data-nav="home">联系我们</a>
+          <a class="footer__link" href="#home" data-nav="home">使用条款</a>
+          <a class="footer__link" href="#home" data-nav="home">隐私说明</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rule" style="background:#2C3B40"></div>
+
+    <div class="footer__bottom">
+      <span>Copyright 2026 知源 ZHIYUAN · 内容仅供学习与研究使用，不作商业转载</span>
+      <span>校订版本 1.4 · 更新于 2026-10</span>
+    </div>
+  </footer>
+</section>
+
+<!-- ============================================================
+     02 学习工作台
+     ============================================================ -->
+<section class="screen" id="dashboard" data-screen="dashboard" data-fit="height">
+  <div class="dash">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand__mark">知</div>
+        <span class="brand__name">知源</span>
+      </div>
+
+      <nav class="sidebar__nav">
+        <a class="sidebar__item is-active" href="#dashboard" data-nav="dashboard">今日学习</a>
+        <a class="sidebar__item" href="#panel" data-nav="panel">学习面板</a>
+        <a class="sidebar__item" href="#reader" data-nav="reader">经典精读</a>
+        <a class="sidebar__item" href="#reader" data-nav="reader">我的批注</a>
+        <a class="sidebar__item" href="#roadmap" data-nav="roadmap">成长路线</a>
+        <a class="sidebar__item" href="#verify" data-nav="verify">来源核验</a>
+        <a class="sidebar__item" href="#dashboard" data-nav="dashboard">概念图谱</a>
+      </nav>
+    </aside>
+
+    <div class="dash__main">
+      <div class="dash__topbar">
+        <div class="greeting">
+          <h1 class="greeting__title">晚上好，同学</h1>
+          <p class="greeting__meta">10 月 21 日 周三 · 已连续学习 12 天 · 本周目标完成 4/6</p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="search-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="7.5" stroke="#8C8474" stroke-width="1.8"/>
+              <path d="M16.5 16.5L21 21" stroke="#8C8474" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <span class="search-pill__text">搜索原文、批注、概念</span>
+          </div>
+          <div class="avatar">学</div>
+        </div>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <span class="kpi__value">4.2 小时</span>
+          <span class="kpi__label">本周精读时长</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi__value">18 条</span>
+          <span class="kpi__label">本周新增批注</span>
+        </div>
+        <div class="kpi kpi--pending">
+          <span class="kpi__value">3 条</span>
+          <span class="kpi__label">待你核校的引文</span>
+        </div>
+      </div>
+
+      <div class="dash__body">
+        <div class="dash__col-left">
+          <!-- 今日任务 -->
+          <div class="card tasks">
+            <div class="tasks__head">
+              <h2 class="card__title">今日任务</h2>
+              <span class="tasks__count">已完成 1 / 3 · 预计还需 45 分钟</span>
+            </div>
+
+            <div class="task">
+              <button class="task__box" type="button" aria-label="标记完成"></button>
+              <div class="task__body">
+                <p class="task__title">精读《德意志意识形态》费尔巴哈章第一节</p>
+                <p class="task__meta">约 40 分钟 · 文集第 1 卷 第 519–528 页 · 配 6 条批注</p>
+              </div>
+            </div>
+
+            <div class="task">
+              <div class="task__box task__box--done">
+                <svg width="9" height="9" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M1.5 6.2L4.4 9L10.5 2.8" stroke="#F7F4EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="task__body">
+                <p class="task__title task__title--done">把「异化劳动」四条规定的笔记合并成一张概念卡</p>
+                <p class="task__meta">已完成 · 今天 20:14 · 自动存入概念图谱</p>
+              </div>
+            </div>
+
+            <div class="task">
+              <button class="task__box" type="button" aria-label="标记完成"></button>
+              <div class="task__body">
+                <p class="task__title">复核 3 条标记为「待核实」的引文页码</p>
+                <p class="task__meta task__meta--pending">约 5 分钟 · 涉及《1844年手稿》两处、《形态》一处</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 最近批注 -->
+          <div class="card recent">
+            <div class="recent__head">
+              <h2 class="card__title">最近批注</h2>
+              <a class="recent__all link-quiet" href="#reader" data-nav="reader">全部 42 条</a>
+            </div>
+
+            <div class="anno-item">
+              <div class="rule-soft"></div>
+              <div class="anno-item__row">
+                <div class="anno-item__bar"></div>
+                <div class="anno-item__body">
+                  <p class="anno-item__text">对象化不等于异化：只有当产物反过来支配生产者，异化才成立。</p>
+                  <p class="anno-item__meta">聂锦芳 ·《1844年经济学哲学手稿》第 519 页 · 3 天前</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="anno-item">
+              <div class="rule-soft"></div>
+              <div class="anno-item__row">
+                <div class="anno-item__bar"></div>
+                <div class="anno-item__body">
+                  <p class="anno-item__text">「消灭」不是抹掉，而是让人重新占有自己的类本质——这句读快了会滑过去。</p>
+                  <p class="anno-item__meta">张一兵 ·《德意志意识形态》第 528 页 · 昨天</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="anno-item">
+              <div class="rule-soft"></div>
+              <div class="anno-item__row">
+                <div class="anno-item__bar"></div>
+                <div class="anno-item__body">
+                  <p class="anno-item__text">1844 年的「异化」还不是成熟的政治经济学概念，先把它读成一个哲学—人类学问题。</p>
+                  <p class="anno-item__meta">吴晓明 ·《1844年经济学哲学手稿》第 520 页 · 上周</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="weekly">
+              <div class="rule-soft"></div>
+              <div class="weekly__head">
+                <span class="weekly__label">本周精读节奏</span>
+                <span class="weekly__total">共 6 小时 40 分 · 周三为今日</span>
+              </div>
+              <svg viewBox="0 0 700 80" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                <line x1="0" y1="70.5" x2="700" y2="70.5" stroke="#E2DCCD" stroke-width="1"/>
+                <rect x="28" y="34" width="44" height="36" rx="1" fill="#DCD4C0"/>
+                <rect x="128" y="14" width="44" height="56" rx="1" fill="#DCD4C0"/>
+                <rect x="228" y="46" width="44" height="24" rx="1" fill="#A63A2A"/>
+                <rect x="328" y="6" width="44" height="64" rx="1" fill="#DCD4C0"/>
+                <rect x="428" y="26" width="44" height="44" rx="1" fill="#DCD4C0"/>
+                <rect x="528" y="54" width="44" height="16" rx="1" fill="#DCD4C0"/>
+                <rect x="628" y="38" width="44" height="32" rx="1" fill="#DCD4C0"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash__col-right">
+          <!-- 路线进度 -->
+          <div class="card progress">
+            <div class="progress__head">
+              <h2 class="card__title--sm">本学期路线</h2>
+              <span class="progress__stage">第二阶段 3/5</span>
+            </div>
+            <div class="progress__bar"><div class="progress__fill"></div></div>
+            <p class="progress__note">「进原著」还差 2 篇；下一本建议从《神圣家族》入手，篇幅短、和《手稿》接得上。</p>
+          </div>
+
+          <!-- 概念图谱 -->
+          <div class="card graph">
+            <div class="graph__head">
+              <h2 class="card__title--sm">概念图谱</h2>
+              <span class="graph__count">「异化」关联 12 个节点</span>
+            </div>
+            <svg viewBox="0 0 316 128" fill="none" aria-hidden="true">
+              <path d="M158 64L64 30M158 64L48 92M158 64L120 16M158 64L232 22M158 64L268 74M158 64L208 106M158 64L96 110" stroke="#DCD4C0" stroke-width="1"/>
+              <circle cx="64" cy="30" r="4" fill="#1F2E33"/>
+              <circle cx="48" cy="92" r="3.5" fill="#C9C0AC"/>
+              <circle cx="120" cy="16" r="3" fill="#C9C0AC"/>
+              <circle cx="232" cy="22" r="4" fill="#1F2E33"/>
+              <circle cx="268" cy="74" r="3.5" fill="#2F4F42"/>
+              <circle cx="208" cy="106" r="3" fill="#C9C0AC"/>
+              <circle cx="96" cy="110" r="3.5" fill="#2F4F42"/>
+              <circle cx="158" cy="64" r="7.5" fill="#A63A2A"/>
+              <circle cx="158" cy="64" r="13" stroke="#A63A2A" stroke-opacity="0.28" stroke-width="1"/>
+            </svg>
+            <p class="graph__caption">点击任意节点，可看该概念在《手稿》《形态》《资本论》中的含义变化。</p>
+          </div>
+
+          <!-- 待核校 -->
+          <div class="queue">
+            <div class="queue__head">
+              <h2 class="queue__title">待你核校</h2>
+              <span class="queue__badge">3</span>
+            </div>
+            <p class="queue__item">《1844年手稿》第 522 页｜引用页码与本馆藏本不一致</p>
+            <p class="queue__item">《德意志意识形态》第 531 页｜「交往形式」译名两版不同</p>
+            <p class="queue__item">二手文献转引 1 处｜未找到原始出处，已标「待核实」</p>
+            <button class="queue__action" type="button">开始核校这 3 条</button>
+            <p class="queue__note">核校后会自动更新批注状态；核不实的保持「待核实」，不会替你抹平。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 经典精读
+     ============================================================ -->
+<section class="screen" id="reader" data-screen="reader" data-fit="height">
+  <div class="reader">
+    <header class="reader__top">
+      <div class="reader__top-left">
+        <a href="#home" data-nav="home" aria-label="返回首页">
+          <svg class="icon-back" viewBox="0 0 16 16" fill="none">
+            <path d="M13.5 8h-11M6 3.5L1.5 8 6 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="reader__title-col">
+          <span class="reader__book">《1844年经济学哲学手稿》</span>
+          <span class="reader__version">《马克思恩格斯选集》第 1 卷 · 人民出版社 2012 · 对照《文集》第 1 卷</span>
+        </div>
+      </div>
+
+      <div class="reader__top-right">
+        <div class="font-size">
+          <button type="button" aria-label="缩小字号">A－</button>
+          <button type="button" aria-label="默认字号">A</button>
+          <button type="button" aria-label="放大字号">A＋</button>
+        </div>
+        <button class="toggle" id="annoToggle" type="button">
+          <span class="toggle__dot"></span>
+          <span>批注 开</span>
+        </button>
+        <button class="btn btn-cite" type="button" id="copyCite">引用此段</button>
+      </div>
+    </header>
+    <div class="rule"></div>
+
+    <div class="reader__body">
+      <!-- 目录 -->
+      <aside class="toc">
+        <span class="toc__label">目录</span>
+        <a class="toc__item" href="#reader" data-nav="reader">序言</a>
+        <a class="toc__item" href="#reader" data-nav="reader">笔记本 I · 工资</a>
+        <a class="toc__item" href="#reader" data-nav="reader">笔记本 I · 资本的利润</a>
+        <a class="toc__item" href="#reader" data-nav="reader">笔记本 I · 地租</a>
+        <a class="toc__item is-active" href="#reader" data-nav="reader">［异化劳动和私有财产］</a>
+        <a class="toc__item" href="#reader" data-nav="reader">笔记本 II · 私有财产的关系</a>
+      </aside>
+
+      <!-- 原文 -->
+      <article class="reading">
+        <span class="reading__kicker">笔记本 I · ［XXII］</span>
+        <h1 class="reading__title">异化劳动和私有财产</h1>
+        <p class="reading__meta">约 8,200 字 · 阅读约 32 分钟 · 本段配 6 条批注</p>
+        <div class="rule-2"></div>
+
+        <p>我们从当前的经济事实出发。</p>
+        <p>工人生产的财富越多，他的产品的力量和数量越大，他就越贫穷。工人创造的商品越多，他就越变成廉价的商品。物的世界的增值同人的世界的贬值成正比。</p>
+        <p>劳动所生产的对象，即劳动的产品，作为一种异己的存在物，作为不依赖于生产者的力量，同劳动相对立。</p>
+
+        <div class="anno-marker">
+          <span class="anno-marker__line"></span>
+          <span class="anno-marker__text">此处挂有 2 条批注 · 聂锦芳 / 张一兵</span>
+        </div>
+
+        <p>劳动为富人生产了奇迹般的东西，但是为工人生产了赤贫。劳动生产了宫殿，但是给工人生产了棚舍。劳动生产了美，但是使工人变成畸形。</p>
+        <p>劳动用机器代替了手工劳动，但是使一部分工人回到野蛮的劳动，并使另一部分工人变成机器。劳动生产了智慧，但是给工人生产了愚钝和痴呆。</p>
+
+        <div class="highlight">
+          <div class="highlight__bar"></div>
+          <div class="highlight__body">
+            <span class="highlight__label">关键句</span>
+            <p class="highlight__quote">「物的世界的增值同人的世界的贬值成正比。」——全节的枢纽，后面的四条规定都从这里展开。</p>
+          </div>
+        </div>
+
+        <div class="points">
+          <span class="points__title">本段要点 · 读完请自查</span>
+          <p class="points__item">1　先立事实：工人生产的财富越多，自身反而越贫穷。</p>
+          <p class="points__item">2　再问原因：为什么对象化的产物会反过来支配生产者。</p>
+          <p class="points__item">3　落到规定：异化劳动的四个规定由此依次展开，别跳步。</p>
+        </div>
+
+        <p class="reading__note">本页文字据《马克思恩格斯选集》第 1 卷（人民出版社 2012 年版）录入；段末所标页码依《文集》第 1 卷（2009）标注——两版页码不同，正式引用请核对你手上那一本。</p>
+      </article>
+
+      <!-- 名家批注 -->
+      <aside class="annotations" id="annoPanel">
+        <div class="annotations__head">
+          <h2 class="card__title--sm">名家批注</h2>
+          <span class="annotations__count">本段 6 条 · 已展开 4 条</span>
+        </div>
+
+        <article class="anno-card">
+          <div class="anno-card__head">
+            <span class="anno-card__name">聂锦芳</span>
+            <span class="anno-card__org">北京大学哲学系 · 教授</span>
+          </div>
+          <p class="anno-card__text">「经济事实」四个字要紧：马克思不是从概念推演出发，而是从国民经济学自己承认的事实出发，再让这些事实彼此矛盾。</p>
+          <div class="anno-card__foot">
+            <span class="anno-card__src">MARX-1844-07 · 学者授权文本</span>
+            <span class="status status--ok">已核校</span>
+          </div>
+        </article>
+
+        <article class="anno-card">
+          <div class="anno-card__head">
+            <span class="anno-card__name">张一兵</span>
+            <span class="anno-card__org">南京大学哲学系 · 教授</span>
+          </div>
+          <p class="anno-card__text">对象化是任何劳动都具有的结构，异化则是特定社会关系下的变形。两者混为一谈，整节就读歪了。</p>
+          <div class="anno-card__foot">
+            <span class="anno-card__src">MARX-1844-11 · 学者授权文本</span>
+            <span class="status status--ok">已核校</span>
+          </div>
+        </article>
+
+        <article class="anno-card">
+          <div class="anno-card__head">
+            <span class="anno-card__name">汪信砚</span>
+            <span class="anno-card__org">武汉大学哲学学院 · 教授</span>
+          </div>
+          <p class="anno-card__text">这段常被当成单纯的经济描述；其实它在讲人与自己产品的关系，落点是人的受动性，而不只是穷。</p>
+          <div class="anno-card__foot">
+            <span class="anno-card__src">MARX-1844-14 · 页码待核</span>
+            <span class="status status--pending">待核实</span>
+          </div>
+        </article>
+
+        <article class="anno-card">
+          <div class="anno-card__head">
+            <span class="anno-card__name">何　萍</span>
+            <span class="anno-card__org">武汉大学哲学学院 · 教授</span>
+          </div>
+          <p class="anno-card__text">把「异化」与「物化」分开看：异化是活动及其产物反过来支配人，物化更接近后来讲的商品拜物教。</p>
+          <div class="anno-card__foot">
+            <span class="anno-card__src">MARX-1844-19 · 学者授权文本</span>
+            <span class="status status--ok">已核校</span>
+          </div>
+        </article>
+
+        <button class="btn-loadmore" type="button">展开剩余 2 条批注</button>
+        <p class="annotations__note">批注按段落锚定，点卡片即可回到原文位置；标「待核实」的条目请勿直接引用。</p>
+
+        <div class="my-note">
+          <span class="my-note__label">我的批注</span>
+          <textarea class="my-note__input" rows="1" placeholder="记一句：这段我读出了什么，哪一句还没读通……"></textarea>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 成长路线
+     ============================================================ -->
+<section class="screen" id="roadmap" data-screen="roadmap">
+  <header class="page-top">
+    <a class="brand" href="#home" data-nav="home">
+      <div class="brand__mark">知</div>
+      <span class="brand__name">知源</span>
+    </a>
+    <span class="page-top__crumb">学习　/　成长路线</span>
+    <a class="page-top__back" href="#home" data-nav="home">返回首页</a>
+  </header>
+  <div class="rule"></div>
+
+  <div class="roadmap__hero">
+    <span class="section__kicker">成长路线 · 依据武汉大学 2023 版本科人才培养方案</span>
+    <h1 class="roadmap__title">前三个学期不分专业，这条路得按它走</h1>
+    <p class="roadmap__desc">武汉大学马克思主义学院按「马克思主义理论大类」招生：前三个学期统一培养，第三学期末分流为马克思主义理论、思想政治教育、中国共产党历史三个方向，后五个学期进入专业培养。下面按这个真实节点排，不按「大一到大四」笼统切。</p>
+
+    <div class="tabs">
+      <button class="tab is-active" type="button">第 1–3 学期 · 大类</button>
+      <button class="tab" type="button">第 4–5 学期 · 专业</button>
+      <button class="tab" type="button">第 6–7 学期 · 科研</button>
+      <button class="tab" type="button">第 8 学期 · 出口</button>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <article class="timeline__row">
+      <div class="rule-2"></div>
+      <div class="timeline__inner">
+        <div class="timeline__left">
+          <span class="timeline__index">1–3</span>
+          <span class="timeline__year">学期 · 大类培养（不分专业）</span>
+        </div>
+        <div class="timeline__content">
+          <h2 class="timeline__title">先打平地基：公共课、三大导引、大类平台课</h2>
+          <p class="timeline__body">要做什么｜不急着钻某一个方向。把公共基础课与三大导引通识必修（《人文社科经典导引》《自然科学经典导引》《中国精神导引》）读扎实，再用大类平台课把马克思主义哲学、政治经济学、科学社会主义的框架立起来。<br>关键节点｜第三学期末进入专业培养：马克思主义理论／思想政治教育／中国共产党历史三个方向。<br>书单｜《马克思主义发展史》（第二版）先通读第 1–2 编，把时间轴立起来；《马克思恩格斯选集》第 1 卷从《共产党宣言》入手。</p>
+          <div class="pitfall"><p class="pitfall__text">常见坑：把前三个学期当「通识混学分」。大类平台课是后面所有专业课的地基，这里松了，后面全是补课。</p></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="timeline__row">
+      <div class="rule-2"></div>
+      <div class="timeline__inner">
+        <div class="timeline__left">
+          <span class="timeline__index">4–5</span>
+          <span class="timeline__year">学期 · 专业基础（马克思主义理论方向）</span>
+        </div>
+        <div class="timeline__content">
+          <h2 class="timeline__title">进专业：经典文献导读，加一条发展史</h2>
+          <p class="timeline__body">要做什么｜分流之后主线是「文献 + 史」两条腿：一手文献按哲学、政治经济学、科学社会主义三块分别导读，同时用马克思主义发展史把文本排回时间轴，知道每篇是在跟谁争论。<br>课程参照｜专业主要课程含马克思主义经典作家文献选读、马克思主义发展史、社会主义发展史（据学院专业介绍）。学院在 2023 版修订中明确要「让经典文献课形成梯度和系列」，并讨论把马克思主义发展史适当延后开。<br>书单｜《选集》第 1 卷（1843–1859 年著作）与第 2 卷（政治经济学专卷）为主；每读一篇，回《发展史》对一次位置。<br>自测｜每读完一篇，能不能三句话说清：它在回应谁、解决了什么、又留下了什么。</p>
+          <div class="pitfall"><p class="pitfall__text">常见坑：把「经典文献选读」当文学课听。这类课考核要落回概念与论证，复述金句拿不到分。</p></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="timeline__row">
+      <div class="rule-2"></div>
+      <div class="timeline__inner">
+        <div class="timeline__left">
+          <span class="timeline__index">6–7</span>
+          <span class="timeline__year">学期 · 专题与科研训练</span>
+        </div>
+        <div class="timeline__content">
+          <h2 class="timeline__title">立专题：科研训练是必修学分，不是加分项</h2>
+          <p class="timeline__body">要做什么｜2023 版方案把科研训练列入必修学分，同时压缩专业选修、设立专业准出制度、鼓励跨学院选课。结论很直接：早进课题组、早立项，比多选两门水课有用。<br>课程参照｜专业选修与专题课（如国外马克思主义、当代社会思潮评析、经济学说史等，据学院专业介绍）；可跨学院选课，哲学、历史、社会学、经济学的课都算数。<br>书单｜《中国共产党的七十年》通读一遍——不是背史实，是学它「夹叙夹议」的写法：九章加一个结束语的骨架。<br>输出｜一份像样的专题综述或科研训练报告：说清学界在哪几处分歧、各自依据什么文本、你站哪一边以及为什么。</p>
+          <div class="pitfall"><p class="pitfall__text">常见坑：科研训练拖到最后一年。它是必修学分，逾期不补，而且会和毕业论文抢时间。</p></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="timeline__row">
+      <div class="rule-2"></div>
+      <div class="timeline__inner">
+        <div class="timeline__left">
+          <span class="timeline__index">8</span>
+          <span class="timeline__year">学期 · 论文与出口</span>
+        </div>
+        <div class="timeline__content">
+          <h2 class="timeline__title">收口：毕业论文，以及那条大概率的升学路</h2>
+          <p class="timeline__body">要做什么｜毕业论文是从「读别人的」转到「自己做」的唯一强制动作。选题宜小、材料宜一手、注释宜规范——三者缺一，答辩都会被追问。<br>出口｜学院介绍称，近 70% 本科毕业生通过保研或考研继续深造；学院支持硕博连读，正在推动本硕博贯通培养。<br>书单｜党史结论一律回《中国共产党历史》第一、二卷核；《选集》第 3、4 卷补 1864 年以后的文本与书信。<br>节奏｜保研看前三年，论文写在大四，两条线并行不冲突，但要提前排。</p>
+          <div class="pitfall"><p class="pitfall__text">常见坑：开题贪大。「马克思的异化理论」八千字写不完；「《手稿》笔记本 I 中『对象化』的三处用法」才收得住。</p></div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- 培养方案结构 -->
+  <div class="plan">
+    <div class="plan__head">
+      <div class="plan__head-left">
+        <span class="section__kicker">培养方案 · 课程结构</span>
+        <h2 class="plan__title">学分由哪几块组成</h2>
+      </div>
+      <p class="plan__note">法学门类 · 四年制 · 毕业总学分原则上不超过 150</p>
+    </div>
+
+    <div class="plan__grid">
+      <article class="module">
+        <span class="module__no">01</span>
+        <h3 class="module__name">公共基础课程</h3>
+        <p class="module__desc">思政课、外语、体育与通识基础，全校统一要求。</p>
+      </article>
+      <article class="module">
+        <span class="module__no">02</span>
+        <h3 class="module__name">通识教育课程</h3>
+        <p class="module__desc">人文社科／自然科学／中国精神三大导引为必修；选修分四大模块。</p>
+      </article>
+      <article class="module">
+        <span class="module__no">03</span>
+        <h3 class="module__name">专业教育课程</h3>
+        <p class="module__desc">大类平台课（原则上不超过 8 门）、专业必修、专业选修全院打通。</p>
+      </article>
+      <article class="module">
+        <span class="module__no">04</span>
+        <h3 class="module__name">科研训练与实践</h3>
+        <p class="module__desc">2023 版起计入必修学分；含社会实践与专业实习。</p>
+      </article>
+      <article class="module module--accent">
+        <span class="module__no">05</span>
+        <h3 class="module__name">毕业总学分</h3>
+        <p class="module__desc">法学门类四年制，原则上不超过 150 学分。</p>
+      </article>
+    </div>
+
+    <div class="rule-2"></div>
+    <p class="source-note">依据｜《武汉大学 2023 版本科人才培养方案修订的指导意见》（校级课程结构与学分要求）；马克思主义学院 2023 版马克思主义理论大类培养方案修订说明；学院本科专业介绍。具体课程名称、学分与开课学期以本科生院当年公布的正式方案为准——本页凡未标来源者，均为使用建议，不是培养方案原文。</p>
+  </div>
+
+  <!-- 书单：四本的用法 -->
+  <div class="books">
+    <div class="books__head">
+      <div class="books__head-left">
+        <span class="section__kicker">书单 · 四本的用法</span>
+        <h2 class="books__title">这四本，不是一种读法</h2>
+      </div>
+      <p class="books__note">出版信息已核至出版社与年份；页码以你手上印次为准</p>
+    </div>
+
+    <div class="books__grid">
+      <article class="book-card">
+        <h3 class="book-card__title">《马克思恩格斯选集》<br>（四卷）</h3>
+        <p class="book-card__edition">人民出版社 · 第 3 版，2012</p>
+        <p class="book-card__use">一手文本。第 1 卷 1843–1859、第 2 卷政治经济学专卷、第 3 卷 1864–1883、第 4 卷书信。</p>
+        <span class="book-card__stage">用在｜第 4–5 学期</span>
+      </article>
+
+      <article class="book-card">
+        <h3 class="book-card__title">《马克思主义发展史》<br>（马工程教材）</h3>
+        <p class="book-card__edition">高教社·人民出版社 · 第二版，2021</p>
+        <p class="book-card__use">教材，给骨架：把每篇文本排回它的问题情境与论战对象。</p>
+        <span class="book-card__stage">用在｜第 1–3 学期打底</span>
+      </article>
+
+      <article class="book-card">
+        <h3 class="book-card__title">《中国共产党的七十年》<br>（胡绳主编）</h3>
+        <p class="book-card__edition">中共党史出版社 · 1991</p>
+        <p class="book-card__use">叙事，学写法：九章加结束语，胡乔木评为「夹叙夹议，有质有文」。叙述止于 1991。</p>
+        <span class="book-card__stage">用在｜第 6–7 学期</span>
+      </article>
+
+      <article class="book-card">
+        <h3 class="book-card__title">《中国共产党历史》<br>（第一、二卷）</h3>
+        <p class="book-card__edition">中共党史出版社 · 2011</p>
+        <p class="book-card__use">正史，核事实用。<br>一卷止于 1949，二卷止于 1978。</p>
+        <span class="book-card__stage">用在｜第 8 学期论文</span>
+      </article>
+    </div>
+
+    <div class="rule-2"></div>
+    <p class="source-note">版本说明｜四本的出版信息已核到出版社与年份。《中国共产党历史》目前出版第一、二卷（止于 1978 年），第三卷尚未出版——引用 1978 年后的党史结论，请另找权威出处，不要想当然写「党史三卷」。《七十年》叙述止于 1991，此后的史事需接其他著作。页码一律以你手上那个印次为准。</p>
+  </div>
+
+  <!-- 经典原文库：4 个 HTML 入口 -->
+  <div class="library">
+    <div class="library__head">
+      <div class="library__head-left">
+        <span class="section__kicker">经典原文库 · 4 个入口</span>
+        <h2 class="library__title">原文、旁批、导图，一节一屏</h2>
+      </div>
+      <p class="library__note">点开是独立页面，可单独收藏或打印</p>
+    </div>
+
+    <div class="lib-grid">
+      <a class="lib-card" href="works/manuscrit-1844.html">
+        <span class="lib-card__no">篇目 01</span>
+        <span class="lib-card__title">《1844年经济学哲学手稿》</span>
+        <span class="lib-card__sub">［异化劳动和私有财产］</span>
+        <span class="lib-card__meta">2 节 · 6 条旁批 · 2 张导图</span>
+        <span class="lib-card__go">进入原文 →</span>
+      </a>
+
+      <a class="lib-card" href="works/manifesto.html">
+        <span class="lib-card__no">篇目 02</span>
+        <span class="lib-card__title">《共产党宣言》</span>
+        <span class="lib-card__sub">第一、二章</span>
+        <span class="lib-card__meta">2 节 · 5 条旁批 · 2 张导图</span>
+        <span class="lib-card__go">进入原文 →</span>
+      </a>
+
+      <a class="lib-card" href="works/german-ideology.html">
+        <span class="lib-card__no">篇目 03</span>
+        <span class="lib-card__title">《德意志意识形态》</span>
+        <span class="lib-card__sub">第一章 费尔巴哈（节选）</span>
+        <span class="lib-card__meta">2 节 · 4 条旁批 · 2 张导图</span>
+        <span class="lib-card__go">进入原文 →</span>
+      </a>
+
+      <a class="lib-card" href="works/capital.html">
+        <span class="lib-card__no">篇目 04</span>
+        <span class="lib-card__title">《资本论》第一卷</span>
+        <span class="lib-card__sub">第一篇 第一章 商品</span>
+        <span class="lib-card__meta">2 节 · 4 条旁批 · 2 张导图</span>
+        <span class="lib-card__go">进入原文 →</span>
+      </a>
+
+      <a class="lib-card lib-card--index" href="works/library.html">
+        <span class="lib-card__no">总表</span>
+        <span class="lib-card__title">书目总表 · 15 本</span>
+        <span class="lib-card__sub">原著 4 · 教材 9 · 党史 2</span>
+        <span class="lib-card__meta">每本标来源等级与名家导读</span>
+        <span class="lib-card__go">打开书目总表 →</span>
+      </a>
+    </div>
+
+    <div class="rule-2"></div>
+    <p class="source-note">说明｜四个页面均为「关键段落节选 + 逐段旁批 + 每节思维导图」，不是全文录入。马恩著作的中文译文有版权，整章复制属侵权；需要完整原文请读纸本或授权电子版。所有摘录标注所据卷次与版次，页码待核。</p>
+  </div>
+
+  <div class="ability">
+    <span class="section__kicker">学习指南 · 怎么读</span>
+    <h2 class="ability__title">五条能立刻用上的读法</h2>
+
+    <div class="ability__list">
+      <div class="ability__row">
+        <span class="ability__name">三遍读法</span>
+        <p class="ability__path">第一遍通读，只标出读不懂的句子；第二遍只追论证链，不管修辞；第三遍回头查每个术语在别处怎么用</p>
+      </div>
+      <div class="ability__row">
+        <span class="ability__name">版本先行</span>
+        <p class="ability__path">动手做笔记前先记书名、版次、页码；《选集》是 2012 第三版、《文集》是 2009，同一段引文两处页码不同，别混着标</p>
+      </div>
+      <div class="ability__row">
+        <span class="ability__name">概念追踪</span>
+        <p class="ability__path">同一个词（异化／对象化／物化）在不同年份的文本里各是什么用法，做成一张对照表</p>
+      </div>
+      <div class="ability__row">
+        <span class="ability__name">一句话复述</span>
+        <p class="ability__path">每读完一节，逼自己写一句「这段在回应谁的什么说法」；写不出来，就是还没读懂</p>
+      </div>
+      <div class="ability__row">
+        <span class="ability__name">注释即功底</span>
+        <p class="ability__path">用 GB/T 7714，页码精确到页；这是导师一眼就能看出深浅的地方</p>
+      </div>
+    </div>
+
+    <p class="ability__note">说明｜本页是学习方法的建议，与培养方案不是同一份文件；课程与学分要求以本科生院公布为准。涉及制度的事实性表述，依据武汉大学本科生院与马克思主义学院公开信息。</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     05 来源核验
+     ============================================================ -->
+<section class="screen" id="verify" data-screen="verify">
+  <header class="page-top">
+    <a class="brand" href="#home" data-nav="home">
+      <div class="brand__mark">知</div>
+      <span class="brand__name">知源</span>
+    </a>
+    <span class="page-top__crumb">说明　/　来源核验标准</span>
+    <a class="page-top__back" href="#home" data-nav="home">返回首页</a>
+  </header>
+  <div class="rule"></div>
+
+  <div class="verify__hero">
+    <span class="section__kicker">来源核验 · 方法公开</span>
+    <h1 class="verify__headline">每条引文，都能查到它站在哪一页</h1>
+    <p class="verify__lead">我们把核验过程本身摊开给你看：核到什么程度、依据哪一本、谁复核的、什么时候复核的。达不到标准的，就标「待核实」并说明该去哪里核。</p>
+
+    <div class="stats">
+      <div class="stat-card stat-card--ok">
+        <span class="stat-card__value">1,842</span>
+        <span class="stat-card__label">条目已核校，可直接引用</span>
+      </div>
+      <div class="stat-card stat-card--pending">
+        <span class="stat-card__value">37</span>
+        <span class="stat-card__label">待核实，已标注不作引用依据</span>
+      </div>
+      <div class="stat-card stat-card--doubt">
+        <span class="stat-card__value">4</span>
+        <span class="stat-card__label">存疑，附冲突说明供判断</span>
+      </div>
+      <div class="stat-card stat-card--plain">
+        <span class="stat-card__value">7</span>
+        <span class="stat-card__label">个对照版本，含 MEGA² 编次</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="verify__body">
+    <div class="process">
+      <h2 class="process__title">一条引文，要过五道工序</h2>
+      <div class="process__steps">
+        <div class="step">
+          <span class="step__no">01</span>
+          <span class="step__title">机器比对</span>
+          <p class="step__desc">原文与电子文本逐字比对，先标出不一致的地方。</p>
+        </div>
+        <div class="step">
+          <span class="step__no">02</span>
+          <span class="step__title">版本核对</span>
+          <p class="step__desc">确认所据版本、卷次与页码，异文一并登记。</p>
+        </div>
+        <div class="step">
+          <span class="step__no">03</span>
+          <span class="step__title">编辑复核</span>
+          <p class="step__desc">第二位编辑独立复核一遍，签字留痕，不许自审自发。</p>
+        </div>
+        <div class="step">
+          <span class="step__no">04</span>
+          <span class="step__title">学者确认</span>
+          <p class="step__desc">涉及解读的条目送原作者确认，不由编辑代拟。</p>
+        </div>
+        <div class="step">
+          <span class="step__no">05</span>
+          <span class="step__title">发布留档</span>
+          <p class="step__desc">状态与日期写入档案，任何时候都能回溯。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="audit">
+      <div class="audit__head">
+        <h2 class="audit__title">抽检记录</h2>
+        <span class="audit__note">近 30 天 · 随机抽取 20 条 · 每条留痕可查</span>
+      </div>
+
+      <div class="table">
+        <div class="table__row table__row--head">
+          <span class="table__cell table__cell--head c1">核对项</span>
+          <span class="table__cell table__cell--head c2">本平台标注</span>
+          <span class="table__cell table__cell--head c3">核验依据</span>
+          <span class="table__cell table__cell--head c4">状态</span>
+        </div>
+        <div class="table__divider"></div>
+
+        <div class="table__row">
+          <span class="table__cell table__cell--key c1">原文文字</span>
+          <span class="table__cell c2">《马恩选集》第 1 卷，第 3 版 2012</span>
+          <span class="table__cell c3">与《文集》第 1 卷（2009）对读核对</span>
+          <span class="table__cell table__cell--ok c4">已核校</span>
+        </div>
+        <div class="table__divider"></div>
+
+        <div class="table__row">
+          <span class="table__cell table__cell--key c1">段落编次</span>
+          <span class="table__cell c2">笔记本 I ［XXII］</span>
+          <span class="table__cell c3">依文集编者标注复核</span>
+          <span class="table__cell table__cell--ok c4">已核校</span>
+        </div>
+        <div class="table__divider"></div>
+
+        <div class="table__row">
+          <span class="table__cell table__cell--key c1">译名「对象化」</span>
+          <span class="table__cell c2">对象化（Entäußerung 另译外化）</span>
+          <span class="table__cell c3">与《马克思恩格斯全集》第 3 卷比对</span>
+          <span class="table__cell table__cell--ok c4">一致</span>
+        </div>
+        <div class="table__divider"></div>
+
+        <div class="table__row">
+          <span class="table__cell table__cell--key c1">页码引用</span>
+          <span class="table__cell c2">第 519 页（文集）</span>
+          <span class="table__cell c3">待对《选集》同段页码</span>
+          <span class="table__cell table__cell--pending c4">待核实</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="citation">
+      <span class="citation__label">GB/T 7714 · 一键生成引用</span>
+      <p class="citation__code">马克思, 恩格斯. 马克思恩格斯选集: 第1卷[M]. 3版. 北京: 人民出版社, 2012.</p>
+      <p class="citation__note">导入笔记前请核对你手上纸本的页码：同一版本的不同印次，页码可能不同。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     06 通用学习面板
+     ============================================================ -->
+<section class="screen" id="panel" data-screen="panel" data-fit="height">
+  <div class="panel">
+    <header class="panel__top">
+      <a class="brand" href="#home" data-nav="home">
+        <div class="brand__mark">知</div>
+        <span class="brand__name">知源</span>
+      </a>
+      <span class="panel__crumb">面板　/　学习进度</span>
+      <div class="seg">
+        <button class="seg__item is-active" type="button">本周</button>
+        <button class="seg__item" type="button">本月</button>
+        <button class="seg__item" type="button">全部</button>
+      </div>
+    </header>
+    <div class="rule"></div>
+
+    <div class="panel__head">
+      <div class="panel__head-left">
+        <span class="section__kicker">学习面板 · 通用模板</span>
+        <h1 class="panel__title">这个阶段，读到哪儿了</h1>
+        <p class="panel__sub">面板只认三类对象：阅读、章节、题库。换任何课程、任何专业，填进去就能用。</p>
+      </div>
+      <button class="btn btn-add" type="button">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M6 1.5v9M1.5 6h9" stroke="#A63A2A" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        添加学习对象
+      </button>
+    </div>
+
+    <div class="panel__body">
+      <div class="panel__left">
+        <!-- 总进度 -->
+        <div class="pcard total-card">
+          <svg class="donut" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+            <circle cx="64" cy="64" r="54" stroke="#EFE9DA" stroke-width="10"/>
+            <circle cx="64" cy="64" r="54" stroke="#A63A2A" stroke-width="10" stroke-linecap="round"
+                    pathLength="100" stroke-dasharray="62 100" transform="rotate(-90 64 64)"/>
+            <circle cx="64" cy="64" r="41" stroke="#F4EFE2" stroke-width="1"/>
+          </svg>
+
+          <div class="total-right">
+            <div class="total-head">
+              <span class="total-value">62%</span>
+              <span class="total-label">总体完成度 · 三类对象加权，权重见右下角口径</span>
+            </div>
+            <div class="prow">
+              <span class="prow__label">阅读</span>
+              <div class="prow__track"><div class="prow__fill is-read" style="width:72%"></div></div>
+              <span class="prow__pct">72%</span>
+            </div>
+            <div class="prow">
+              <span class="prow__label">章节</span>
+              <div class="prow__track"><div class="prow__fill is-chapter" style="width:58%"></div></div>
+              <span class="prow__pct">58%</span>
+            </div>
+            <div class="prow">
+              <span class="prow__label">题库</span>
+              <div class="prow__track"><div class="prow__fill is-quiz" style="width:41%"></div></div>
+              <span class="prow__pct">41%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 进行中 -->
+        <div class="pcard list-card">
+          <div class="list-head">
+            <h2 class="card-title">进行中</h2>
+            <span class="list-head__meta">共 3 项 · 按最近更新排序</span>
+          </div>
+
+          <div class="lrow">
+            <div class="lrow__inner">
+              <span class="chip chip--read">阅读</span>
+              <span class="lrow__name">第 1–2 章　导论与基本问题</span>
+              <div class="lrow__track"><div class="lrow__fill is-read" style="width:72%"></div></div>
+              <span class="lrow__pct">72%</span>
+              <span class="lrow__note">8 条批注</span>
+            </div>
+          </div>
+
+          <div class="lrow">
+            <div class="lrow__inner">
+              <span class="chip chip--chapter">章节</span>
+              <span class="lrow__name">第 3 章　核心概念与论证结构</span>
+              <div class="lrow__track"><div class="lrow__fill is-chapter" style="width:58%"></div></div>
+              <span class="lrow__pct">58%</span>
+              <span class="lrow__note">5 条批注</span>
+            </div>
+          </div>
+
+          <div class="lrow">
+            <div class="lrow__inner">
+              <span class="chip chip--quiz">题库</span>
+              <span class="lrow__name">A 组　40 题 · 单选与简答</span>
+              <div class="lrow__track"><div class="lrow__fill is-quiz" style="width:41%"></div></div>
+              <span class="lrow__pct">41%</span>
+              <span class="lrow__note">2 条批注</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 批注 -->
+        <div class="pcard anno-panel">
+          <div class="anno-panel__head">
+            <h2 class="card-title">最近批注</h2>
+            <a class="anno-panel__link link-quiet" href="#reader" data-nav="reader">全部 15 条</a>
+          </div>
+
+          <div class="anno-item">
+            <div class="anno-item__bar"></div>
+            <div class="anno-item__body">
+              <p class="anno-item__text">这一章的重点不是结论，是它反驳了谁。先找出对立面，再回看论证。</p>
+              <p class="anno-item__meta">我的批注 · 第 3 章 · p. 34 · 今天 14:20</p>
+            </div>
+          </div>
+
+          <div class="anno-item">
+            <div class="anno-item__bar"></div>
+            <div class="anno-item__body">
+              <p class="anno-item__text">这三个术语先做成对照表——后面两章还在用同一组词，别读散了。</p>
+              <p class="anno-item__meta">我的批注 · 第 1 章 · p. 12 · 昨天</p>
+            </div>
+          </div>
+
+          <div class="note-input">
+            <span class="note-input__label">我的批注</span>
+            <textarea rows="1" placeholder="写一句：这段我读出了什么，哪一句还没读通……"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel__right">
+        <div class="rcard">
+          <div class="rcard__head">
+            <h2 class="rcard__title">本周节奏</h2>
+            <span class="rcard__meta">共 6 小时 40 分</span>
+          </div>
+          <svg class="rhythm-chart" viewBox="0 0 316 76" fill="none" aria-hidden="true">
+            <line x1="0" y1="66.5" x2="316" y2="66.5" stroke="#E2DCCD"/>
+            <rect x="8" y="36" width="30" height="30" rx="1" fill="#DCD4C0"/>
+            <rect x="52" y="18" width="30" height="48" rx="1" fill="#DCD4C0"/>
+            <rect x="96" y="44" width="30" height="22" rx="1" fill="#A63A2A"/>
+            <rect x="140" y="10" width="30" height="56" rx="1" fill="#DCD4C0"/>
+            <rect x="184" y="28" width="30" height="38" rx="1" fill="#DCD4C0"/>
+            <rect x="228" y="52" width="30" height="14" rx="1" fill="#DCD4C0"/>
+            <rect x="272" y="38" width="30" height="28" rx="1" fill="#DCD4C0"/>
+          </svg>
+        </div>
+
+        <div class="rcard">
+          <div class="rcard__head">
+            <h2 class="rcard__title">本周目标</h2>
+            <span class="rcard__meta rcard__meta--accent">4 / 6 项</span>
+          </div>
+          <div class="goal-row">
+            <span class="goal-row__label">阅读时长</span>
+            <div class="goal-row__track"><div class="goal-row__fill is-read" style="width:83%"></div></div>
+            <span class="goal-row__pct">83%</span>
+          </div>
+          <div class="goal-row">
+            <span class="goal-row__label">新增批注</span>
+            <div class="goal-row__track"><div class="goal-row__fill is-chapter" style="width:75%"></div></div>
+            <span class="goal-row__pct">75%</span>
+          </div>
+          <p class="goal-note">还差 1.3 小时、5 条批注。按现在的节奏，周四能追平。</p>
+        </div>
+
+        <div class="rcard">
+          <div class="rcard__head">
+            <h2 class="rcard__title">待复习</h2>
+            <span class="queue-badge">4</span>
+          </div>
+          <div class="review-row">
+            <span class="review-row__due">今天</span>
+            <span class="review-row__text">第 3 章　三条论证的先后顺序</span>
+          </div>
+          <div class="review-row">
+            <span class="review-row__due review-row__due--soon">明天</span>
+            <span class="review-row__text">第 1 章　两个易混术语的差别</span>
+          </div>
+          <div class="review-row">
+            <span class="review-row__due review-row__due--later">3 天后</span>
+            <span class="review-row__text">题库 A 组　错题 6 道</span>
+          </div>
+        </div>
+
+        <div class="def-card">
+          <span class="def-card__title">进度怎么算</span>
+          <p class="def-card__line">阅读 = 已读页数 ÷ 总页数</p>
+          <p class="def-card__line">章节 = 标记完成的节数 ÷ 总节数</p>
+          <p class="def-card__line">题库 = 答对数 ÷ 总题数，蒙对不计</p>
+          <p class="def-card__note">口径不藏着——一个注水的进度条，比没有进度条更糟。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+/* ============================================================
+   知源 · 06 通用学习面板
+   三类对象（阅读 / 章节 / 题库）＋ 进度条 ＋ 批注
+   ============================================================ */
+
+.panel {
+  width: 1440px;
+  /* 高度跟随内容（与设计稿的 hug_contents 一致），不锁 1024 */
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- 顶栏 ---------------- */
+.panel__top {
+  height: 68px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  background: var(--paper);
+}
+.panel__crumb {
+  font-size: 11.5px;
+  letter-spacing: 0.6px;
+  color: var(--ink-3b);
+}
+.panel__top .brand { gap: 9px; }
+.panel__top .brand__mark { width: 26px; height: 26px; font-size: 13px; }
+.panel__top .brand__name { font-size: 17px; letter-spacing: 1.2px; }
+
+.seg {
+  display: flex;
+  padding: 3px;
+  border-radius: var(--radius-xs);
+  background: #EFE9DA;
+}
+.seg__item {
+  padding: 4px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  color: var(--ink-2b);
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.seg__item:hover { color: var(--ink-body); }
+.seg__item.is-active {
+  background: var(--card);
+  color: var(--deep);
+  font-weight: 500;
+}
+
+/* ---------------- 页头 ---------------- */
+.panel__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 34px 80px 26px;
+}
+.panel__head-left { display: flex; flex-direction: column; gap: 12px; }
+.panel__title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  letter-spacing: 1.2px;
+  color: var(--ink);
+}
+.panel__sub {
+  max-width: 620px;
+  font-size: 13px;
+  line-height: 26px;
+  color: var(--ink-2);
+}
+.btn-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--line-btn);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: var(--ink-body);
+  white-space: nowrap;
+  transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.btn-add:hover { background: #F1EBDD; border-color: var(--ink-4); opacity: 1; }
+
+/* ---------------- 主体 ---------------- */
+.panel__body {
+  display: flex;
+  gap: 20px;
+  padding: 0 80px 60px;
+}
+.panel__left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.panel__right {
+  width: 356px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.pcard {
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  border: 1px solid var(--line-3);
+}
+
+/* ---------------- 总进度 ---------------- */
+.total-card {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 24px 26px;
+}
+.donut { width: 128px; height: 128px; flex: none; }
+.total-right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.total-head { display: flex; align-items: flex-end; gap: 12px; }
+.total-value {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  color: var(--ink);
+}
+.total-label { font-size: 10.5px; line-height: 1.5; color: var(--ink-3); }
+
+/* 通用进度行 */
+.prow { display: flex; align-items: center; gap: 10px; }
+.prow__label { width: 40px; flex: none; font-size: 10.5px; color: var(--ink-2b); }
+.prow__track {
+  flex: 1;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--line-4);
+  overflow: hidden;
+}
+.prow__fill { height: 100%; border-radius: 3px; }
+.prow__pct {
+  width: 34px;
+  flex: none;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10.5px;
+  color: var(--ink-3);
+}
+/* 三类对象的语义色 */
+.is-read    { background: var(--cinnabar); }
+.is-chapter { background: var(--verify-ink); }
+.is-quiz    { background: #B07A22; }
+
+/* ---------------- 进行中列表 ---------------- */
+.list-card { padding: 20px 24px; }
+.list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.card-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  color: var(--ink);
+}
+.list-head__meta {
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  color: var(--ink-4);
+}
+
+.lrow { border-top: 1px solid var(--line-4); }
+.lrow__inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+}
+.chip {
+  flex: none;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+.chip--read    { background: var(--cinnabar-toc); color: var(--cinnabar); }
+.chip--chapter { background: var(--verify-bg); color: var(--verify-ink); }
+.chip--quiz    { background: var(--pending-bg); color: var(--pending-ink); }
+
+.lrow__name {
+  width: 190px;
+  flex: none;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-strong);
+}
+.lrow__track {
+  flex: 1;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--line-4);
+  overflow: hidden;
+}
+.lrow__fill { height: 100%; border-radius: 3px; }
+.lrow__pct {
+  width: 38px;
+  flex: none;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--ink-2);
+}
+.lrow__note {
+  width: 56px;
+  flex: none;
+  text-align: right;
+  font-size: 10.5px;
+  color: var(--ink-3b);
+}
+
+/* ---------------- 批注 ---------------- */
+.anno-panel { padding: 20px 24px; display: flex; flex-direction: column; gap: 10px; }
+.anno-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.anno-panel__link {
+  font-size: 10.5px;
+  letter-spacing: 0.3px;
+  color: var(--cinnabar);
+}
+/* 注意：dashboard.css 里也有 .anno-item（纵向排列）。
+   这里所有批注样式都限定在 .anno-panel 内部，避免双向串味 */
+.anno-panel .anno-item {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-4);
+}
+.anno-panel .anno-item__bar { width: 2px; height: 54px; flex: none; background: var(--cinnabar); }
+.anno-panel .anno-item__body { display: flex; flex-direction: column; gap: 7px; }
+.anno-panel .anno-item__text {
+  font-family: var(--font-kai);
+  font-size: 12.5px;
+  line-height: 22px;
+  color: var(--cinnabar);
+}
+.anno-panel .anno-item__meta { font-size: 10px; line-height: 1.5; color: var(--ink-3b); }
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: var(--radius-xs);
+  background: var(--paper-anno);
+  border: 1px solid var(--line-5);
+  transition: border-color 0.2s var(--ease);
+}
+.note-input:focus-within { border-color: #D8C9AE; }
+.note-input__label {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: var(--ink-3b);
+}
+.note-input textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  resize: none;
+  background: transparent;
+  font-family: var(--font-kai);
+  font-size: 11.5px;
+  line-height: 21px;
+  color: var(--ink);
+}
+.note-input textarea::placeholder { color: var(--ink-5); }
+
+/* ---------------- 右栏小卡 ---------------- */
+.rcard {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 18px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  border: 1px solid var(--line-3);
+}
+.rcard__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rcard__title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: 0.6px;
+  color: var(--ink);
+}
+.rcard__meta { font-size: 10px; letter-spacing: 0.3px; color: var(--ink-4); }
+.rcard__meta--accent {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: var(--cinnabar);
+}
+.rhythm-chart { width: 316px; max-width: 100%; height: 76px; }
+
+/* 本周目标 */
+.goal-row { display: flex; align-items: center; gap: 8px; }
+.goal-row__label { width: 72px; flex: none; font-size: 10.5px; color: var(--ink-2b); }
+.goal-row__track {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line-4);
+  overflow: hidden;
+}
+.goal-row__fill { height: 100%; border-radius: 2px; }
+.goal-row__pct {
+  width: 32px;
+  flex: none;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--ink-3);
+}
+.goal-note { font-size: 10px; line-height: 18px; color: var(--ink-3b); }
+
+/* 待复习 */
+.queue-badge {
+  width: 20px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xs);
+  background: var(--pending-ink);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  color: #FBF3E2;
+}
+.review-row { display: flex; align-items: flex-start; gap: 10px; }
+.review-row__due {
+  width: 42px;
+  flex: none;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--cinnabar);
+}
+.review-row__due--soon { color: var(--pending-ink); }
+.review-row__due--later { color: var(--ink-3); }
+.review-row__text {
+  flex: 1;
+  font-size: 11px;
+  line-height: 19px;
+  color: var(--ink-2);
+}
+
+/* 进度口径 */
+.def-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--paper-warm);
+}
+.def-card__title {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: var(--pending-ink);
+}
+.def-card__line { font-size: 10.5px; line-height: 19px; color: var(--ink-2b); }
+.def-card__note {
+  margin-top: 2px;
+  font-family: var(--font-kai);
+  font-size: 9.5px;
+  line-height: 18px;
+  color: var(--pending-ink);
+}
